@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Syne:wght@600;700;800&display=swap');
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --color-canvas-base: #07080A;
+  --color-surface-primary: #0D0F13;
+  --color-surface-secondary: #11141A;
+  --color-surface-elevated: #161A21;
+  --color-border-color: #252A33;
+  --color-border-elevated: #343A46;
+  
+  --color-accent-cyan: #22D3EE;
+  --color-accent-purple: #8B5CF6;
+  --color-accent-blue: #60A5FA;
+  --color-accent-green: #34D399;
+  --color-accent-orange: #FB923C;
+  --color-accent-red: #F87171;
+
+  --font-display: 'Syne', sans-serif;
+  --font-sans: 'Hanken Grotesk', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+@layer base {
+  body {
+    @apply bg-canvas-base text-gray-200 font-sans antialiased;
+  }
+}
+
+/* Cinematic Dark Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-border-elevated);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #6F7787;
+}

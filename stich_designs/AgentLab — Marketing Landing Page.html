@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,300..900;1,300..900&amp;family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&amp;family=Syne:wght@400..800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "on-error": "#690005",
+          "on-surface": "#e2e2e8",
+          "on-secondary": "#3c0091",
+          "on-error-container": "#ffdad6",
+          "on-tertiary-container": "#005091",
+          "accent-green": "#34D399",
+          "surface-tint": "#2fd9f4",
+          "accent-orange": "#FB923C",
+          "surface-container": "#1e2024",
+          "on-secondary-fixed": "#23005c",
+          "inverse-primary": "#006877",
+          "secondary": "#d0bcff",
+          "secondary-fixed-dim": "#d0bcff",
+          "text-secondary": "#A2A9B8",
+          "on-secondary-container": "#c4abff",
+          "surface-variant": "#333539",
+          "tertiary-container": "#99c3ff",
+          "on-surface-variant": "#bbc9cd",
+          "on-tertiary-fixed-variant": "#004883",
+          "border-strong": "#343A46",
+          "text-primary": "#F5F7FA",
+          "outline-variant": "#3c494c",
+          "surface-container-high": "#282a2e",
+          "tertiary-fixed": "#d4e3ff",
+          "inverse-on-surface": "#2f3035",
+          "primary-fixed": "#a2eeff",
+          "inverse-surface": "#e2e2e8",
+          "background": "#111317",
+          "secondary-fixed": "#e9ddff",
+          "on-background": "#e2e2e8",
+          "surface-elevated": "#161A21",
+          "surface-container-lowest": "#0c0e12",
+          "tertiary-fixed-dim": "#a4c9ff",
+          "accent-red": "#F87171",
+          "surface-secondary": "#11141A",
+          "primary-container": "#22d3ee",
+          "canvas-base": "#07080A",
+          "surface-dim": "#111317",
+          "border-subtle": "#252A33",
+          "error": "#ffb4ab",
+          "on-tertiary-fixed": "#001c39",
+          "primary": "#8aebff",
+          "on-primary": "#00363e",
+          "surface-bright": "#37393e",
+          "on-primary-container": "#005763",
+          "on-primary-fixed": "#001f25",
+          "text-muted": "#6F7787",
+          "tertiary": "#cadeff",
+          "surface-container-low": "#1a1c20",
+          "on-primary-fixed-variant": "#004e5a",
+          "on-secondary-fixed-variant": "#5516be",
+          "surface": "#111317",
+          "on-tertiary": "#00315d",
+          "secondary-container": "#571bc1",
+          "surface-primary": "#0D0F13",
+          "primary-fixed-dim": "#2fd9f4",
+          "surface-container-highest": "#333539",
+          "error-container": "#93000a",
+          "outline": "#859397"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.125rem",
+          "lg": "0.25rem",
+          "xl": "0.5rem",
+          "full": "0.75rem"
+        },
+        "spacing": {
+          "space-xl": "2.5rem",
+          "space-sm": "0.5rem",
+          "space-lg": "1.5rem",
+          "space-md": "1rem",
+          "margin": "1rem",
+          "space-xs": "0.25rem",
+          "gutter": "1rem",
+          "gutter-desktop": "1.5rem",
+          "margin-tablet": "2rem",
+          "margin-desktop": "3rem"
+        },
+        "fontFamily": {
+          "label-eyebrow": [
+            "JetBrains Mono"
+          ],
+          "headline-lg": [
+            "Syne"
+          ],
+          "label-code": [
+            "JetBrains Mono"
+          ],
+          "body-lg": [
+            "Hanken Grotesk"
+          ],
+          "headline-sm": [
+            "Hanken Grotesk"
+          ],
+          "label-mono": [
+            "JetBrains Mono"
+          ],
+          "headline-xl": [
+            "Syne"
+          ],
+          "headline-lg-mobile": [
+            "Syne"
+          ],
+          "body-sm": [
+            "Hanken Grotesk"
+          ],
+          "body-md": [
+            "Hanken Grotesk"
+          ],
+          "headline-md": [
+            "Syne"
+          ],
+          "headline-xl-mobile": [
+            "Syne"
+          ]
+        },
+        "fontSize": {
+          "label-eyebrow": [
+            "11px",
+            {
+              "lineHeight": "16px",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-lg": [
+            "36px",
+            {
+              "lineHeight": "44px",
+              "fontWeight": "700"
+            }
+          ],
+          "label-code": [
+            "13px",
+            {
+              "lineHeight": "20px",
+              "fontWeight": "400"
+            }
+          ],
+          "body-lg": [
+            "16px",
+            {
+              "lineHeight": "26px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-sm": [
+            "18px",
+            {
+              "lineHeight": "26px",
+              "fontWeight": "600"
+            }
+          ],
+          "label-mono": [
+            "11px",
+            {
+              "lineHeight": "16px",
+              "fontWeight": "500"
+            }
+          ],
+          "headline-xl": [
+            "56px",
+            {
+              "lineHeight": "64px",
+              "fontWeight": "700"
+            }
+          ],
+          "headline-lg-mobile": [
+            "28px",
+            {
+              "lineHeight": "36px",
+              "fontWeight": "700"
+            }
+          ],
+          "body-sm": [
+            "12px",
+            {
+              "lineHeight": "18px",
+              "fontWeight": "400"
+            }
+          ],
+          "body-md": [
+            "14px",
+            {
+              "lineHeight": "22px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-md": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-xl-mobile": [
+            "36px",
+            {
+              "lineHeight": "44px",
+              "fontWeight": "700"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-canvas-base font-body-md text-text-primary antialiased selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 left-0 right-0 h-16 bg-surface-primary/95 backdrop-blur-md border-b border-border-subtle z-50 px-gutter-desktop flex items-center justify-between"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm"><img alt="AgentLab Symbol Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UtSUaHPLuSI8zGTaoYlVpUUWrWGTtQm-KK5PlhDPHwldzKd1RXwUfutnBNbqs9FMPcRq_QM-LkwoiInv5p_dS8B8pi9woDR23cHmk4V0Z5Wb2VRwo6KtuKEqF0JjoeIYdzBEmPpveD-_rHBKVRnvXyq7a9aysDQ8BL2yMbUIsF6ZKcOPJC20u4TWEXUY_f9A4Oxo9STQmM5oVcnKjR4Q-blwSU60IacHm1gXh7yil5E8RN2yJMTjS2qg"/><span class="font-headline-md text-headline-md tracking-tight text-text-primary">AgentLab</span></div><div class="h-4 w-[1px] bg-border-subtle hidden sm:block"></div><div class="hidden md:flex items-center gap-space-xs px-space-sm py-space-xs rounded bg-surface-secondary border border-border-subtle"><span class="w-1.5 h-1.5 rounded-full bg-accent-green animate-pulse"></span><span class="font-label-mono text-label-mono text-text-secondary">Agent Core Online · Latency 14ms · Model: LLaMA 3.3 via Groq</span></div></div><nav class="hidden lg:flex items-center bg-surface-primary border border-border-subtle p-space-xs rounded-lg gap-space-xs" data-active-classes="bg-surface-elevated text-text-primary border-border-strong"><a aria-current="page" class="px-space-md py-space-xs rounded font-body-sm transition-colors bg-surface-elevated text-text-primary border-border-strong" data-path="marketing-showcase" href="#">Marketing Showcase</a><a class="px-space-md py-space-xs rounded text-text-secondary hover:text-text-primary hover:bg-surface-secondary border border-transparent font-body-sm text-body-sm transition-colors" data-path="agent-workspace" href="#">Agent Workspace</a><a class="px-space-md py-space-xs rounded text-text-secondary hover:text-text-primary hover:bg-surface-secondary border border-transparent font-body-sm text-body-sm transition-colors" data-path="capabilities-library" href="#">Capabilities Library</a><a class="px-space-md py-space-xs rounded text-text-secondary hover:text-text-primary hover:bg-surface-secondary border border-transparent font-body-sm text-body-sm transition-colors" data-path="playground" href="#">Playground</a></nav><div class="flex items-center gap-space-sm"><button class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded bg-text-primary text-canvas-base hover:bg-white font-body-sm text-body-sm font-medium transition-all shadow-[0_0_12px_rgba(245,247,250,0.15)]" type="button"><span>New Session</span><kbd class="font-label-mono text-label-mono text-canvas-base opacity-75 border border-canvas-base/30 px-1 rounded">⌘N</kbd></button><a class="hidden sm:inline-flex px-space-sm py-space-xs rounded text-text-secondary hover:text-text-primary hover:bg-surface-secondary font-label-mono text-label-mono transition-colors" data-path="api-documentation" href="#">API Docs</a><a class="flex items-center gap-space-xs p-space-xs rounded hover:bg-surface-secondary text-text-secondary hover:text-text-primary transition-colors" data-path="profile-settings" href="#"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></a></div></header><main class="w-full pt-16 min-h-screen bg-canvas-base"><div class="flex flex-col w-full text-text-primary overflow-x-hidden selection:bg-primary-container selection:text-on-primary-container">
+<!-- Section 1: Hero Container with WebGL 3D Interactive Spatial Background -->
+<section class="relative min-h-[92vh] flex items-center justify-center overflow-hidden px-gutter-desktop">
+<!-- Spatial Canvas Element -->
+<div class="absolute inset-0 z-0 pointer-events-auto">
+<!-- STITCH_THREEJS_START:ANIMATION_3 class="absolute inset-0 w-full h-full bg-transparent" -->
+<div class="absolute inset-0 w-full h-full bg-transparent" style="display:block;">
+<script src="https://ajax.googleapis.com/ajax/libs/threejs/r125/three.min.js"></script>
+<div id="threejs-container-ANIMATION_3" style="width:100%;height:100%"></div>
+<script>
+(function() {
+  const container = document.getElementById('threejs-container-ANIMATION_3');
+  const devicePixelRatio = window.devicePixelRatio || 1;
+  // AgentLab Interactive 3D Agent Core & Capability Orbit (ThreeUI Inspired)
+const width = container.clientWidth || window.innerWidth;
+const height = container.clientHeight || window.innerHeight;
+
+const scene = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera(45, width / height, 0.1, 1000);
+camera.position.set(0, 0, 18);
+
+const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true, powerPreference: "high-performance" });
+renderer.setSize(width, height);
+renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+container.appendChild(renderer.domElement);
+
+// Lighting
+const ambientLight = new THREE.AmbientLight(0xffffff, 0.8);
+scene.add(ambientLight);
+
+const pointLight1 = new THREE.PointLight(0x22d3ee, 3, 50);
+pointLight1.position.set(5, 5, 8);
+scene.add(pointLight1);
+
+const pointLight2 = new THREE.PointLight(0x8b5cf6, 2.5, 50);
+pointLight2.position.set(-5, -5, 6);
+scene.add(pointLight2);
+
+// Central Agent Core Group
+const coreGroup = new THREE.Group();
+scene.add(coreGroup);
+
+// Central Nucleus: Luminous Icosahedron Cage & Inner Core
+const innerGeom = new THREE.SphereGeometry(1.6, 32, 32);
+const innerMat = new THREE.MeshPhongMaterial({
+  color: 0x0c1524,
+  emissive: 0x0284c7,
+  emissiveIntensity: 0.6,
+  shininess: 100,
+  wireframe: false
+});
+const innerOrb = new THREE.Mesh(innerGeom, innerMat);
+coreGroup.add(innerOrb);
+
+// Outer geometric wireframe cage
+const cageGeom = new THREE.IcosahedronGeometry(2.3, 1);
+const cageMat = new THREE.MeshBasicMaterial({
+  color: 0x22d3ee,
+  wireframe: true,
+  transparent: true,
+  opacity: 0.4
+});
+const cageMesh = new THREE.Mesh(cageGeom, cageMat);
+coreGroup.add(cageMesh);
+
+// Outer energy ring
+const ringGeom = new THREE.TorusGeometry(3.0, 0.03, 16, 100);
+const ringMat = new THREE.MeshBasicMaterial({ color: 0x38bdf8, transparent: true, opacity: 0.5 });
+const ringMesh = new THREE.Mesh(ringGeom, ringMat);
+ringMesh.rotation.x = Math.PI / 2.5;
+coreGroup.add(ringMesh);
+
+// Capability Nodes configuration
+const nodeConfigs = [
+  { name: 'Wikipedia', color: 0x60a5fa, distance: 6.2, speed: 0.35, angle: 0, scale: 0.65 },
+  { name: 'Tavily', color: 0x22d3ee, distance: 7.4, speed: -0.28, angle: 1.8, scale: 0.7 },
+  { name: 'Add', color: 0x34d399, distance: 5.6, speed: 0.42, angle: 3.5, scale: 0.55 },
+  { name: 'Multiply', color: 0x8b5cf6, distance: 6.8, speed: -0.32, angle: 4.9, scale: 0.58 },
+  { name: 'GitHub', color: 0xfb923c, distance: 8.5, speed: 0.22, angle: 2.7, scale: 0.5 }
+];
+
+const nodesGroup = new THREE.Group();
+scene.add(nodesGroup);
+
+const nodes = nodeConfigs.map(cfg => {
+  const nodePiv = new THREE.Group();
+  nodesGroup.add(nodePiv);
+  
+  // Node Sphere
+  const geom = new THREE.SphereGeometry(cfg.scale, 24, 24);
+  const mat = new THREE.MeshPhongMaterial({
+    color: cfg.color,
+    emissive: cfg.color,
+    emissiveIntensity: 0.7,
+    shininess: 80
+  });
+  const mesh = new THREE.Mesh(geom, mat);
+  mesh.position.x = cfg.distance;
+  nodePiv.add(mesh);
+  
+  // Outer halo ring for each node
+  const hGeom = new THREE.RingGeometry(cfg.scale * 1.3, cfg.scale * 1.45, 32);
+  const hMat = new THREE.MeshBasicMaterial({ color: cfg.color, side: THREE.DoubleSide, transparent: true, opacity: 0.5 });
+  const halo = new THREE.Mesh(hGeom, hMat);
+  halo.position.x = cfg.distance;
+  nodePiv.add(halo);
+
+  // Connecting beam geometry (dynamic line updated in render loop)
+  const lineMat = new THREE.LineBasicMaterial({ color: cfg.color, transparent: true, opacity: 0.35 });
+  const lineGeom = new THREE.BufferGeometry().setFromPoints([
+    new THREE.Vector3(0, 0, 0),
+    new THREE.Vector3(cfg.distance, 0, 0)
+  ]);
+  const line = new THREE.Line(lineGeom, lineMat);
+  nodePiv.add(line);
+
+  return { ...cfg, pivot: nodePiv, mesh, halo, line };
+});
+
+// Ambient Floating Particles
+const particleCount = 200;
+const particlePositions = new Float32Array(particleCount * 3);
+const particleColors = new Float32Array(particleCount * 3);
+
+for (let i = 0; i < particleCount; i++) {
+  const r = 4 + Math.random() * 8;
+  const theta = Math.random() * Math.PI * 2;
+  const phi = (Math.random() - 0.5) * Math.PI;
+
+  particlePositions[i * 3] = r * Math.cos(theta) * Math.cos(phi);
+  particlePositions[i * 3 + 1] = r * Math.sin(phi);
+  particlePositions[i * 3 + 2] = r * Math.sin(theta) * Math.cos(phi);
+
+  const isCyan = Math.random() > 0.5;
+  particleColors[i * 3] = isCyan ? 0.13 : 0.54;
+  particleColors[i * 3 + 1] = isCyan ? 0.82 : 0.36;
+  particleColors[i * 3 + 2] = isCyan ? 0.93 : 0.96;
+}
+
+const particleGeom = new THREE.BufferGeometry();
+particleGeom.setAttribute('position', new THREE.BufferAttribute(particlePositions, 3));
+particleGeom.setAttribute('color', new THREE.BufferAttribute(particleColors, 3));
+
+const particleMat = new THREE.PointsMaterial({
+  size: 0.08,
+  vertexColors: true,
+  transparent: true,
+  opacity: 0.75
+});
+const particles = new THREE.Points(particleGeom, particleMat);
+scene.add(particles);
+
+// Mouse parallax tracking
+let mouseX = 0;
+let mouseY = 0;
+let targetX = 0;
+let targetY = 0;
+
+window.addEventListener('mousemove', (e) => {
+  const rect = container.getBoundingClientRect();
+  mouseX = ((e.clientX - rect.left) / (rect.width || 1)) * 2 - 1;
+  mouseY = -(((e.clientY - rect.top) / (rect.height || 1)) * 2 - 1);
+});
+
+// Responsive resize
+window.addEventListener('resize', () => {
+  const newW = container.clientWidth || window.innerWidth;
+  const newH = container.clientHeight || window.innerHeight;
+  camera.aspect = newW / newH;
+  camera.updateProjectionMatrix();
+  renderer.setSize(newW, newH);
+});
+
+// Render loop
+const clock = new THREE.Clock();
+function animate() {
+  requestAnimationFrame(animate);
+  const elapsedTime = clock.getElapsedTime();
+
+  // Smooth mouse inertia
+  targetX += (mouseX - targetX) * 0.05;
+  targetY += (mouseY - targetY) * 0.05;
+
+  // Gentle camera tilt
+  camera.position.x = targetX * 1.8;
+  camera.position.y = targetY * 1.5;
+  camera.lookAt(0, 0, 0);
+
+  // Agent core pulsation & spin
+  coreGroup.rotation.y = elapsedTime * 0.25;
+  coreGroup.rotation.x = Math.sin(elapsedTime * 0.2) * 0.15;
+  cageMesh.rotation.y = -elapsedTime * 0.4;
+  cageMesh.rotation.z = elapsedTime * 0.15;
+  
+  const pulse = 1 + Math.sin(elapsedTime * 2.5) * 0.04;
+  innerOrb.scale.set(pulse, pulse, pulse);
+
+  // Capability nodes orbital mechanics
+  nodes.forEach(node => {
+    node.angle += node.speed * 0.02;
+    node.pivot.rotation.z = node.angle;
+    node.pivot.rotation.x = Math.sin(elapsedTime * 0.5 + node.distance) * 0.25;
+    node.mesh.rotation.y += 0.02;
+    node.halo.rotation.z += 0.03;
+  });
+
+  // Ambient particles slow drift
+  particles.rotation.y = elapsedTime * 0.04;
+  particles.rotation.x = Math.sin(elapsedTime * 0.05) * 0.1;
+
+  renderer.render(scene, camera);
+}
+animate();
+
+})();
+</script>
+</div>
+<!-- STITCH_THREEJS_END:ANIMATION_3 -->
+<!-- Cinematic atmospheric scrims (Strictly theme token mapped) -->
+<div class="absolute inset-0 bg-gradient-to-t from-canvas-base via-canvas-base/60 to-transparent pointer-events-none"></div>
+<div class="absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(34,211,238,0.12),rgba(7,8,10,0))] pointer-events-none"></div>
+</div>
+<!-- Hero Content Matrix -->
+<div class="relative z-10 max-w-7xl w-full mx-auto py-space-xl flex flex-col items-start gap-space-lg">
+<!-- Eyebrow Badge -->
+<div class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-secondary/80 backdrop-blur-md shadow-sm">
+<span class="inline-block w-2 h-2 rounded-full bg-accent-green animate-pulse"></span>
+<span class="font-label-eyebrow text-label-eyebrow uppercase tracking-widest text-text-secondary">Autonomous Reasoning &amp; Capability Runtime</span>
+</div>
+<!-- Main Asymmetric Headline & Editorial Anchor -->
+<div class="max-w-4xl">
+<h1 class="font-headline-xl text-headline-xl text-text-primary tracking-tight leading-[1.08] drop-shadow-md">
+          Give AI the <br/>
+<span class="relative inline-block text-primary">
+            ability to act.
+            <span class="absolute -bottom-1 left-0 w-full h-[2px] bg-primary/40"></span>
+</span>
+</h1>
+<p class="mt-space-md font-body-lg text-body-lg text-text-secondary max-w-2xl leading-relaxed">
+          AgentLab seamlessly connects probabilistic intelligence with real-world tool execution, streaming sensory data, and deterministic action pipelines—inside one low-latency, modular workspace.
+        </p>
+</div>
+<!-- CTAs & Micro-interactions -->
+<div class="flex flex-wrap items-center gap-space-md pt-space-xs">
+<button class="group relative inline-flex items-center justify-center gap-space-xs px-space-lg py-space-sm rounded-lg bg-text-primary text-canvas-base font-headline-sm text-headline-sm transition-all duration-200 hover:bg-white shadow-[0_0_24px_rgba(245,247,250,0.18)] hover:shadow-[0_0_32px_rgba(34,211,238,0.35)]" type="button">
+<span>Launch AgentLab</span>
+<span class="material-symbols-outlined text-[20px] transition-transform duration-200 group-hover:translate-x-1">arrow_forward</span>
+</button>
+<button class="inline-flex items-center gap-space-xs px-space-lg py-space-sm rounded-lg bg-surface-secondary text-text-primary font-headline-sm text-headline-sm hover:bg-surface-elevated transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[20px] text-primary">terminal</span>
+<span>Explore the Agent</span>
+</button>
+</div>
+<!-- Cycling Capability Ticker / Telemetry Bar -->
+<div class="mt-space-md pt-space-md w-full flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-mono text-label-mono text-text-muted uppercase">One agent. Boundless capabilities:</span>
+<div class="inline-flex items-center overflow-hidden h-6 px-space-xs bg-surface-primary rounded">
+<span class="font-label-mono text-label-mono text-primary font-semibold transition-all duration-300" id="capability-rotator">SEARCH</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md font-label-mono text-label-mono text-text-muted">
+<span class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-accent-green"></span> Groq LLaMA 3.3 Engine</span>
+<span class="hidden md:inline text-border-strong">/</span>
+<span class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-accent-orange"></span> 0% Hallucination Enforced</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 2: Technical Trust & Capability Strip -->
+<section class="relative w-full bg-surface-primary py-space-lg px-gutter-desktop shadow-inner">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md">
+<div class="shrink-0 flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">hub</span>
+<span class="font-label-eyebrow text-label-eyebrow text-text-secondary uppercase tracking-widest">Active Tool Registry</span>
+</div>
+<!-- Capability Chips Horizontal Rail -->
+<div class="flex flex-wrap items-center gap-space-xs w-full md:w-auto">
+<div class="flex items-center gap-1.5 px-space-sm py-1 rounded bg-surface-secondary text-text-primary shadow-sm hover:bg-surface-elevated transition-colors">
+<span class="w-1.5 h-1.5 rounded-full bg-accent-green"></span>
+<span class="font-label-code text-label-code">WikipediaQueryRun</span>
+</div>
+<div class="flex items-center gap-1.5 px-space-sm py-1 rounded bg-surface-secondary text-text-primary shadow-sm hover:bg-surface-elevated transition-colors">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span class="font-label-code text-label-code">TavilySearch</span>
+</div>
+<div class="flex items-center gap-1.5 px-space-sm py-1 rounded bg-surface-secondary text-text-primary shadow-sm hover:bg-surface-elevated transition-colors">
+<span class="w-1.5 h-1.5 rounded-full bg-accent-orange"></span>
+<span class="font-label-code text-label-code">calc:add</span>
+</div>
+<div class="flex items-center gap-1.5 px-space-sm py-1 rounded bg-surface-secondary text-text-primary shadow-sm hover:bg-surface-elevated transition-colors">
+<span class="w-1.5 h-1.5 rounded-full bg-accent-orange"></span>
+<span class="font-label-code text-label-code">calc:multiply</span>
+</div>
+<div class="flex items-center gap-1.5 px-space-sm py-1 rounded bg-surface-secondary text-text-primary shadow-sm hover:bg-surface-elevated transition-colors">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="font-label-code text-label-code">GitHubAPI</span>
+</div>
+<div class="flex items-center gap-1.5 px-space-sm py-1 rounded bg-surface-secondary text-text-primary shadow-sm hover:bg-surface-elevated transition-colors">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+<span class="font-label-code text-label-code">WeatherTelemetry</span>
+</div>
+<div class="flex items-center gap-1.5 px-space-sm py-1 rounded bg-surface-secondary text-text-primary shadow-sm hover:bg-surface-elevated transition-colors">
+<span class="w-1.5 h-1.5 rounded-full bg-text-muted"></span>
+<span class="font-label-code text-label-code">PostgresEngine</span>
+</div>
+<div class="flex items-center gap-1 px-space-sm py-1 rounded bg-surface-elevated text-primary shadow-sm cursor-pointer hover:bg-surface-container transition-colors">
+<span class="font-label-mono text-label-mono">+ Your Custom Tools</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: Product Narrative & Asymmetric Flow Comparison -->
+<section class="relative py-space-xl px-gutter-desktop max-w-7xl mx-auto w-full">
+<div class="flex flex-col gap-space-xl">
+<!-- Section Header -->
+<div class="flex flex-col gap-space-xs max-w-3xl">
+<span class="font-label-eyebrow text-label-eyebrow text-primary uppercase tracking-wider">The Paradigm Shift</span>
+<h2 class="font-headline-lg text-headline-lg text-text-primary tracking-tight">AI that doesn't stop at an answer.</h2>
+<p class="font-body-md text-body-md text-text-secondary leading-relaxed">
+          Standard language models operate in a closed chamber, forced to guess or decline when confronted with live facts and computational operations. AgentLab transforms the model into an executive reasoning brain with agency.
+        </p>
+</div>
+<!-- Split Asymmetric Comparison Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-stretch">
+<!-- Left: Conventional Dead-End (4 cols) -->
+<div class="lg:col-span-5 bg-surface-primary rounded-xl p-space-lg flex flex-col justify-between shadow-md">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-mono text-label-mono uppercase text-accent-red flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">cancel</span> Standard LLM Bottleneck
+              </span>
+<span class="font-label-mono text-label-mono text-text-muted">Static Weights</span>
+</div>
+<div class="p-space-md rounded-lg bg-surface-secondary flex flex-col gap-space-xs">
+<span class="font-label-eyebrow text-label-eyebrow text-text-muted uppercase">Query</span>
+<p class="font-body-sm text-body-sm text-text-secondary italic">"What is the current token volume on Solana and multiply it by 1.15?"</p>
+</div>
+<div class="p-space-md rounded-lg bg-on-error-container/10 flex flex-col gap-space-xs">
+<span class="font-label-eyebrow text-label-eyebrow text-accent-red uppercase">Failure Cascade</span>
+<p class="font-body-sm text-body-sm text-text-secondary">
+                "My knowledge cutoff is October 2023. I do not have access to real-time blockchain telemetry, and my internal arithmetic often hallucinates large float multiplication."
+              </p>
+</div>
+</div>
+<div class="mt-space-lg pt-space-md flex items-center gap-space-xs text-text-muted font-label-mono text-label-mono">
+<span class="material-symbols-outlined text-[16px] text-accent-red">block</span>
+<span>Static generation without verification</span>
+</div>
+</div>
+<!-- Right: AgentLab Autonomous Dynamic Tool Loop (7 cols) -->
+<div class="lg:col-span-7 bg-surface-secondary rounded-xl p-space-lg flex flex-col justify-between shadow-xl relative overflow-hidden">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-mono text-label-mono uppercase text-accent-green flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">check_circle</span> AgentLab Dynamic Pipeline
+              </span>
+<span class="font-label-mono text-label-mono text-primary flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-accent-green animate-ping"></span> Realtime Execution
+              </span>
+</div>
+<!-- Pipeline Visual Breadcrumb -->
+<div class="grid grid-cols-1 sm:grid-cols-5 gap-space-xs">
+<div class="p-space-xs rounded bg-surface-primary flex flex-col items-center text-center">
+<span class="font-label-mono text-label-mono text-text-muted">01</span>
+<span class="font-headline-sm text-body-sm text-text-primary">Intent</span>
+</div>
+<div class="p-space-xs rounded bg-surface-primary flex flex-col items-center text-center">
+<span class="font-label-mono text-label-mono text-text-muted">02</span>
+<span class="font-headline-sm text-body-sm text-primary">Core Loop</span>
+</div>
+<div class="p-space-xs rounded bg-surface-primary flex flex-col items-center text-center">
+<span class="font-label-mono text-label-mono text-text-muted">03</span>
+<span class="font-headline-sm text-body-sm text-accent-orange">Dispatch</span>
+</div>
+<div class="p-space-xs rounded bg-surface-primary flex flex-col items-center text-center">
+<span class="font-label-mono text-label-mono text-text-muted">04</span>
+<span class="font-headline-sm text-body-sm text-accent-green">Execution</span>
+</div>
+<div class="p-space-xs rounded bg-surface-primary flex flex-col items-center text-center">
+<span class="font-label-mono text-label-mono text-text-muted">05</span>
+<span class="font-headline-sm text-body-sm text-secondary">Synthesis</span>
+</div>
+</div>
+<!-- Execution Trace Log Mock -->
+<div class="p-space-md rounded-lg bg-canvas-base flex flex-col gap-space-xs font-label-code text-label-code">
+<div class="flex items-center justify-between text-text-muted pb-1">
+<span>[AGENT_TRACE: #9284-solana]</span>
+<span class="text-accent-green">LATENCY: 42ms</span>
+</div>
+<p class="text-text-secondary">
+<span class="text-primary font-semibold">TavilySearch</span>("solana current 24h token volume") → <span class="text-accent-green">200 OK</span> [Volume: $3.84B]
+              </p>
+<p class="text-text-secondary">
+<span class="text-accent-orange font-semibold">calc:multiply</span>(3840000000, 1.15) → <span class="text-accent-green">200 OK</span> [Result: $4.416B]
+              </p>
+<p class="text-text-primary pt-1">
+                &gt; Verified Output: Current volume of <span class="text-primary">$3.84B</span> projected at 1.15x is <span class="text-accent-green font-semibold">$4.416 Billion</span>.
+              </p>
+</div>
+</div>
+<div class="mt-space-lg pt-space-md flex items-center justify-between text-text-secondary font-label-mono text-label-mono">
+<span class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[16px]">verified</span> Grounded execution across dynamic schema
+            </span>
+<span class="text-text-muted">Groq LLaMA 3.3 Engine</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 4: How It Works - Four-Stage Pipeline Architecture -->
+<section class="relative py-space-xl bg-surface-primary px-gutter-desktop shadow-inner">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-xl">
+<!-- Section Title -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-eyebrow text-label-eyebrow text-primary uppercase tracking-widest">Architectural Lifecycle</span>
+<h2 class="font-headline-lg text-headline-lg text-text-primary tracking-tight">Four-Stage System Pipeline</h2>
+</div>
+<p class="font-body-md text-body-md text-text-secondary max-w-md">
+          A deterministic harness wrapping non-deterministic inference to enforce guarantees, security sandboxing, and sub-millisecond dispatch.
+        </p>
+</div>
+<!-- Pipeline Cards Layout -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Step 01 -->
+<div class="group p-space-lg rounded-xl bg-surface-secondary hover:bg-surface-elevated transition-all duration-200 flex flex-col justify-between shadow-md">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-headline-lg text-headline-lg text-text-muted group-hover:text-primary transition-colors">01</span>
+<span class="material-symbols-outlined text-[24px] text-text-secondary">psychology</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<h3 class="font-headline-md text-headline-md text-text-primary">Understand</h3>
+<p class="font-body-sm text-body-sm text-text-secondary leading-relaxed">
+                Deconstructs natural language into structured semantic goals, parameter bounds, and dependencies without lossy summarization.
+              </p>
+</div>
+</div>
+<div class="pt-space-md mt-space-md flex items-center gap-1 font-label-mono text-label-mono text-text-muted">
+<span class="w-1.5 h-1.5 rounded-full bg-text-muted"></span> Semantic Deconstruct
+          </div>
+</div>
+<!-- Step 02 -->
+<div class="group p-space-lg rounded-xl bg-surface-secondary hover:bg-surface-elevated transition-all duration-200 flex flex-col justify-between shadow-md">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-headline-lg text-headline-lg text-text-muted group-hover:text-primary transition-colors">02</span>
+<span class="material-symbols-outlined text-[24px] text-text-secondary">rule_settings</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<h3 class="font-headline-md text-headline-md text-text-primary">Select</h3>
+<p class="font-body-sm text-body-sm text-text-secondary leading-relaxed">
+                Dynamically scans the live capability registry, matching schemas against the execution requirements using contextual embeddings.
+              </p>
+</div>
+</div>
+<div class="pt-space-md mt-space-md flex items-center gap-1 font-label-mono text-label-mono text-primary">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Registry Dynamic Match
+          </div>
+</div>
+<!-- Step 03 -->
+<div class="group p-space-lg rounded-xl bg-surface-secondary hover:bg-surface-elevated transition-all duration-200 flex flex-col justify-between shadow-md">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-headline-lg text-headline-lg text-text-muted group-hover:text-accent-orange transition-colors">03</span>
+<span class="material-symbols-outlined text-[24px] text-text-secondary">memory</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<h3 class="font-headline-md text-headline-md text-text-primary">Execute</h3>
+<p class="font-body-sm text-body-sm text-text-secondary leading-relaxed">
+                Isolated sandbox execution stream with runtime authorization, latency instrumentation, and instant fallback trees.
+              </p>
+</div>
+</div>
+<div class="pt-space-md mt-space-md flex items-center gap-1 font-label-mono text-label-mono text-accent-orange">
+<span class="w-1.5 h-1.5 rounded-full bg-accent-orange"></span> Isolated Run Sandbox
+          </div>
+</div>
+<!-- Step 04 -->
+<div class="group p-space-lg rounded-xl bg-surface-secondary hover:bg-surface-elevated transition-all duration-200 flex flex-col justify-between shadow-md">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-headline-lg text-headline-lg text-text-muted group-hover:text-accent-green transition-colors">04</span>
+<span class="material-symbols-outlined text-[24px] text-text-secondary">verified_user</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<h3 class="font-headline-md text-headline-md text-text-primary">Respond</h3>
+<p class="font-body-sm text-body-sm text-text-secondary leading-relaxed">
+                Synthesizes returned payload data back into human narrative with cryptographically linked citations and execution records.
+              </p>
+</div>
+</div>
+<div class="pt-space-md mt-space-md flex items-center gap-1 font-label-mono text-label-mono text-accent-green">
+<span class="w-1.5 h-1.5 rounded-full bg-accent-green"></span> Verifiable Citations
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 5: Interactive Agent Live Workspace Simulation -->
+<section class="relative py-space-xl px-gutter-desktop max-w-7xl mx-auto w-full">
+<div class="flex flex-col gap-space-lg">
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-eyebrow text-label-eyebrow text-primary uppercase tracking-wider">Live Workspace Visualizer</span>
+<h2 class="font-headline-lg text-headline-lg text-text-primary tracking-tight">The Execution Surface</h2>
+<p class="font-body-md text-body-md text-text-secondary max-w-2xl">
+          Watch how AgentLab orchestrates external information retrieval in milliseconds without leaving the operational context.
+        </p>
+</div>
+<!-- Workspace Mock Container -->
+<div class="w-full bg-surface-primary rounded-xl overflow-hidden shadow-2xl flex flex-col">
+<!-- Terminal Inspector Bar -->
+<div class="px-space-md py-space-xs bg-surface-secondary flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-3 h-3 rounded-full bg-accent-red/80"></span>
+<span class="w-3 h-3 rounded-full bg-accent-orange/80"></span>
+<span class="w-3 h-3 rounded-full bg-accent-green/80"></span>
+<span class="ml-space-sm font-label-mono text-label-mono text-text-muted">agentlab-session://cluster-alpha-09</span>
+</div>
+<div class="flex items-center gap-space-md font-label-mono text-label-mono text-text-muted">
+<span class="hidden sm:inline">Thread: #AGENT-4921</span>
+<span class="px-2 py-0.5 rounded bg-surface-primary text-accent-green">LLaMA 3.3 (Groq)</span>
+</div>
+</div>
+<!-- Chat & Telemetry Split Screen -->
+<div class="grid grid-cols-1 lg:grid-cols-12 min-h-[480px]">
+<!-- Left: User Interaction & Dynamic Response Stream (7 cols) -->
+<div class="lg:col-span-7 p-space-lg flex flex-col justify-between gap-space-lg">
+<div class="flex flex-col gap-space-md">
+<!-- User Message Bubble -->
+<div class="flex items-start gap-space-sm self-end max-w-xl">
+<div class="p-space-md rounded-xl bg-surface-elevated text-text-primary shadow-sm">
+<span class="font-label-eyebrow text-label-eyebrow text-text-muted block mb-1">USER</span>
+<p class="font-body-md text-body-md text-text-primary">
+                    "What's happening in AI agents today? Highlight recent major benchmarks and compute efficiencies."
+                  </p>
+</div>
+<div class="w-8 h-8 rounded bg-surface-variant flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[16px] text-text-primary">person</span>
+</div>
+</div>
+<!-- Agent Structured Response -->
+<div class="flex items-start gap-space-sm max-w-2xl">
+<div class="w-8 h-8 rounded bg-surface-container flex items-center justify-center shrink-0">
+<img alt="AgentLab Symbol" class="w-5 h-5 object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UtSUaHPLuSI8zGTaoYlVpUUWrWGTtQm-KK5PlhDPHwldzKd1RXwUfutnBNbqs9FMPcRq_QM-LkwoiInv5p_dS8B8pi9woDR23cHmk4V0Z5Wb2VRwo6KtuKEqF0JjoeIYdzBEmPpveD-_rHBKVRnvXyq7a9aysDQ8BL2yMbUIsF6ZKcOPJC20u4TWEXUY_f9A4Oxo9STQmM5oVcnKjR4Q-blwSU60IacHm1gXh7yil5E8RN2yJMTjS2qg"/>
+</div>
+<div class="p-space-md rounded-xl bg-surface-secondary text-text-primary shadow-sm flex flex-col gap-space-sm w-full">
+<div class="flex items-center justify-between">
+<span class="font-label-eyebrow text-label-eyebrow text-primary">AGENTLAB SYNTHESIS</span>
+<span class="font-label-mono text-label-mono text-text-muted">Verified 5 sources · 1.8s</span>
+</div>
+<p class="font-body-md text-body-md text-text-secondary leading-relaxed">
+                    Based on real-time retrieval from Tavily Search across arXiv and technical benchmarks over the past 24 hours:
+                  </p>
+<div class="flex flex-col gap-space-xs font-body-sm text-body-sm text-text-primary pl-space-sm">
+<div class="flex items-baseline gap-space-xs">
+<span class="text-primary font-bold">1.</span>
+<p><span class="font-semibold text-text-primary">Autonomous Reasoning Runtimes:</span> Inference-time compute scaling is demonstrating up to 40% error reduction on complex multi-step code execution datasets.</p>
+</div>
+<div class="flex items-baseline gap-space-xs">
+<span class="text-primary font-bold">2.</span>
+<p><span class="font-semibold text-text-primary">Groq Hardware Acceleration:</span> LLaMA 3.3 models running with sub-20ms token latency allow instantaneous tool round-trips without user stall.</p>
+</div>
+</div>
+<!-- Citations Strip -->
+<div class="pt-space-xs flex flex-wrap gap-1.5 items-center">
+<span class="font-label-mono text-label-mono text-text-muted text-[10px] uppercase">Citations:</span>
+<a class="px-2 py-0.5 rounded bg-surface-primary text-text-secondary hover:text-primary font-label-code text-[11px] transition-colors" href="#">arxiv:2501.092v1</a>
+<a class="px-2 py-0.5 rounded bg-surface-primary text-text-secondary hover:text-primary font-label-code text-[11px] transition-colors" href="#">groq-telemetry/q1</a>
+<a class="px-2 py-0.5 rounded bg-surface-primary text-text-secondary hover:text-primary font-label-code text-[11px] transition-colors" href="#">tavily/live-idx#84</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Fake Prompt Input Field -->
+<div class="relative flex items-center bg-surface-secondary rounded-lg p-space-xs shadow-inner">
+<span class="material-symbols-outlined text-text-muted ml-2 text-[18px]">terminal</span>
+<input class="w-full bg-transparent px-space-sm py-space-xs font-body-sm text-body-sm text-text-muted cursor-not-allowed outline-none" disabled="" type="text" value="Ask AgentLab to research, calculate, or manipulate tools..."/>
+<span class="px-space-sm py-1 rounded bg-surface-elevated text-text-muted font-label-mono text-[10px]">READ ONLY DEMO</span>
+</div>
+</div>
+<!-- Right: Live Agent Activity & Telemetry Inspector (5 cols) -->
+<div class="lg:col-span-5 bg-surface-elevated p-space-md flex flex-col justify-between">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-eyebrow text-label-eyebrow text-text-secondary uppercase">Agent Telemetry Stack</span>
+<span class="flex items-center gap-1 font-label-mono text-label-mono text-accent-green text-[10px]">
+<span class="w-1.5 h-1.5 rounded-full bg-accent-green animate-pulse"></span> RUNTIME ACTIVE
+                </span>
+</div>
+<!-- Step Sequence Pipeline Display -->
+<div class="flex flex-col gap-space-xs">
+<!-- Activity Step 1 -->
+<div class="p-space-sm rounded bg-surface-secondary flex items-start gap-space-sm shadow-sm">
+<span class="text-accent-green font-bold text-sm">✓</span>
+<div class="flex flex-col">
+<span class="font-label-code text-label-code text-text-primary">Request understood</span>
+<span class="font-label-mono text-label-mono text-text-muted text-[10px]">Intent mapped to web_search in 12ms</span>
+</div>
+</div>
+<!-- Activity Step 2 -->
+<div class="p-space-sm rounded bg-surface-secondary flex items-start gap-space-sm shadow-sm">
+<span class="text-accent-green font-bold text-sm">✓</span>
+<div class="flex flex-col">
+<span class="font-label-code text-label-code text-text-primary">Tavily Search selected</span>
+<span class="font-label-mono text-label-mono text-text-muted text-[10px]">Schema matched from registry with confidence 0.98</span>
+</div>
+</div>
+<!-- Activity Step 3 -->
+<div class="p-space-sm rounded bg-surface-secondary flex items-start gap-space-sm shadow-sm">
+<span class="text-accent-orange font-bold text-sm animate-pulse">◌</span>
+<div class="flex flex-col">
+<span class="font-label-code text-label-code text-text-primary">Searching the web...</span>
+<span class="font-label-mono text-label-mono text-accent-orange text-[10px]">5 live sources parsed &amp; embedded · 1.8s</span>
+</div>
+</div>
+<!-- Activity Step 4 -->
+<div class="p-space-sm rounded bg-surface-secondary flex items-start gap-space-sm shadow-sm">
+<span class="text-accent-green font-bold text-sm">✓</span>
+<div class="flex flex-col">
+<span class="font-label-code text-label-code text-text-primary">Response ready</span>
+<span class="font-label-mono text-label-mono text-text-muted text-[10px]">Hallucination check passed (0 divergence)</span>
+</div>
+</div>
+</div>
+<!-- Realtime Latency Sparkline Graph Mock (Inline SVG) -->
+<div class="p-space-sm rounded bg-surface-secondary flex flex-col gap-1 shadow-sm">
+<div class="flex items-center justify-between font-label-mono text-label-mono text-[10px] text-text-muted">
+<span>INFERENCE LATENCY PROFILE</span>
+<span class="text-primary font-semibold">14ms AVG</span>
+</div>
+<div class="w-full h-12 flex items-end pt-2">
+<svg class="w-full h-full text-primary" fill="none" viewbox="0 0 200 40">
+<path d="M0 35 L20 32 L40 28 L60 30 L80 12 L100 24 L120 18 L140 10 L160 14 L180 8 L200 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+<path d="M0 35 L20 32 L40 28 L60 30 L80 12 L100 24 L120 18 L140 10 L160 14 L180 8 L200 6 L200 40 L0 40 Z" fill="currentColor" fill-opacity="0.1"></path>
+</svg>
+</div>
+</div>
+</div>
+<!-- Node Metrics -->
+<div class="pt-space-sm flex items-center justify-between font-label-mono text-label-mono text-[11px] text-text-muted">
+<span>Token Cost: $0.0004</span>
+<span>Context: 3.2k / 128k</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 6: Architecture & Infinite Tool Extensibility -->
+<section class="relative py-space-xl bg-surface-secondary px-gutter-desktop shadow-inner">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-xl">
+<!-- Headline & Philosophy -->
+<div class="max-w-3xl flex flex-col gap-space-xs">
+<span class="font-label-eyebrow text-label-eyebrow text-primary uppercase tracking-widest">Extensible Tool Ecosystem</span>
+<h2 class="font-headline-lg text-headline-lg text-text-primary tracking-tight">Your agent should never outgrow its tools.</h2>
+<p class="font-body-lg text-body-lg text-text-secondary leading-relaxed">
+          AgentLab decouples reasoning logic from physical capabilities. Add bespoke databases, internal proprietary APIs, and third-party SaaS plugins at runtime without re-training or rebuilding the underlying agent graph.
+        </p>
+</div>
+<!-- Architectural Interactive Diagram -->
+<div class="p-space-lg rounded-xl bg-surface-primary shadow-xl flex flex-col gap-space-lg">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">account_tree</span>
+<span class="font-label-eyebrow text-label-eyebrow text-text-primary uppercase">Topology Visualizer: Dynamic Dispatch Bus</span>
+</div>
+<span class="font-label-mono text-label-mono text-text-muted text-[11px]">HOT-SWAPPABLE AT RUNTIME</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md items-center">
+<!-- Node 1: Reasoning Brain -->
+<div class="p-space-md rounded-lg bg-surface-secondary flex flex-col items-center text-center gap-space-xs shadow-md">
+<div class="w-12 h-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[28px]">psychology_alt</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-text-primary">Agent Core</span>
+<p class="font-body-sm text-body-sm text-text-muted">LLaMA 3.3 Orchestrator evaluating constraints &amp; task plans</p>
+<span class="mt-2 font-label-mono text-[10px] px-2 py-0.5 rounded bg-surface-elevated text-primary">PORT: 8080/RPC</span>
+</div>
+<!-- Connecting Bus (Vector Graphic) -->
+<div class="p-space-md rounded-lg bg-surface-elevated flex flex-col items-center text-center gap-space-xs shadow-md relative">
+<div class="w-12 h-12 rounded-lg bg-accent-orange/10 text-accent-orange flex items-center justify-center">
+<span class="material-symbols-outlined text-[28px]">tune</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-text-primary">Dynamic Registry</span>
+<p class="font-body-sm text-body-sm text-text-muted">Type-safe JSONSchema parser with access ACL checks</p>
+<span class="mt-2 font-label-mono text-[10px] px-2 py-0.5 rounded bg-surface-secondary text-accent-orange">LIVE REGISTER</span>
+</div>
+<!-- Dynamic Output Tools Nodes -->
+<div class="p-space-md rounded-lg bg-surface-secondary flex flex-col gap-space-xs shadow-md">
+<span class="font-label-eyebrow text-label-eyebrow text-text-muted uppercase">Connected Endpoints</span>
+<div class="flex flex-col gap-1.5 mt-1 font-label-code text-label-code">
+<div class="flex items-center justify-between p-1.5 rounded bg-surface-primary text-text-primary">
+<span>VectorStore.Query()</span>
+<span class="text-accent-green text-[10px]">CONNECTED</span>
+</div>
+<div class="flex items-center justify-between p-1.5 rounded bg-surface-primary text-text-primary">
+<span>Stripe.BillingAPI()</span>
+<span class="text-accent-green text-[10px]">CONNECTED</span>
+</div>
+<div class="flex items-center justify-between p-1.5 rounded bg-surface-primary text-text-primary">
+<span>Slack.PostAlert()</span>
+<span class="text-accent-green text-[10px]">CONNECTED</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 7: Developer-First Experience (Clean Code Snippet) -->
+<section class="relative py-space-xl px-gutter-desktop max-w-7xl mx-auto w-full">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<!-- Copy Details (5 cols) -->
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<span class="font-label-eyebrow text-label-eyebrow text-primary uppercase tracking-wider">Engineered for Builders</span>
+<h2 class="font-headline-lg text-headline-lg text-text-primary tracking-tight">Define custom actions in seconds.</h2>
+<p class="font-body-md text-body-md text-text-secondary leading-relaxed">
+          Wrap any function, script, or cloud webhook into an agent-executable capability using our declarative TypeScript SDK. The framework handles strict parameter validation and zero-cost schema generation.
+        </p>
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<div class="flex items-center gap-space-xs text-text-primary font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-primary text-[18px]">done</span>
+<span>Automatic Zod schema introspection</span>
+</div>
+<div class="flex items-center gap-space-xs text-text-primary font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-primary text-[18px]">done</span>
+<span>Deterministic sandboxed execution limits</span>
+</div>
+<div class="flex items-center gap-space-xs text-text-primary font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-primary text-[18px]">done</span>
+<span>Automated tool-call error recovery and re-tries</span>
+</div>
+</div>
+<div class="pt-space-xs">
+<a class="inline-flex items-center gap-1 font-label-mono text-label-mono text-primary hover:underline" href="#">
+<span>Read the Tool Authoring Guide</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- IDE Window Code Presentation (7 cols) -->
+<div class="lg:col-span-7 bg-surface-primary rounded-xl overflow-hidden shadow-2xl">
+<!-- IDE Chrome -->
+<div class="px-space-md py-space-xs bg-surface-secondary flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-3 h-3 rounded-full bg-surface-container"></span>
+<span class="font-label-mono text-label-mono text-text-muted text-[11px]">tools/tavily-search.ts</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="px-2 py-0.5 rounded bg-surface-elevated text-text-secondary font-label-mono text-[10px]">TypeScript 5.4</span>
+<button class="text-text-muted hover:text-text-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+</button>
+</div>
+</div>
+<!-- Code Content -->
+<div class="p-space-lg font-label-code text-label-code bg-surface-primary overflow-x-auto text-text-secondary leading-relaxed">
+<pre><code><span class="text-secondary font-semibold">import</span> { defineTool } <span class="text-secondary font-semibold">from</span> <span class="text-accent-green">'@agentlab/runtime'</span>;
+<span class="text-secondary font-semibold">import</span> { z } <span class="text-secondary font-semibold">from</span> <span class="text-accent-green">'zod'</span>;
+
+<span class="text-text-muted">// Define an autonomous tool in clean declarative syntax</span>
+<span class="text-secondary font-semibold">export const</span> TavilySearch = defineTool({
+  name: <span class="text-accent-green">'TavilySearch'</span>,
+  description: <span class="text-accent-green">'Perform live real-time internet search queries.'</span>,
+  parameters: z.object({
+    query: z.string().describe(<span class="text-accent-green">'Target retrieval term'</span>),
+    maxResults: z.number().default(<span class="text-accent-orange">5</span>),
+  }),
+  execute: <span class="text-secondary font-semibold">async</span> ({ query, maxResults }, { context }) =&gt; {
+    <span class="text-text-muted">// Automatic instrumentation &amp; sandboxed execution</span>
+    <span class="text-secondary font-semibold">const</span> response = <span class="text-secondary font-semibold">await</span> fetch(<span class="text-accent-green">'https://api.tavily.com/search'</span>, {
+      method: <span class="text-accent-green">'POST'</span>,
+      headers: { <span class="text-accent-green">'Authorization'</span>: `Bearer ${context.env.TAVILY_KEY}` },
+      body: JSON.stringify({ query, max_results: maxResults }),
+    });
+    
+    <span class="text-secondary font-semibold">return await</span> response.json();
+  },
+});</code></pre>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 8: Visual Testimonials & Industry Proof Strip -->
+<section class="relative py-space-lg bg-surface-primary px-gutter-desktop shadow-inner">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<div class="p-space-md rounded-lg bg-surface-secondary flex flex-col justify-between shadow-sm">
+<p class="font-body-sm text-body-sm text-text-secondary italic">
+          "AgentLab solved our reliability issues instantly. The model no longer pretends it checked the database—it actually runs the signed query with zero token drift."
+        </p>
+<div class="mt-space-md flex items-center gap-space-xs font-label-mono text-label-mono text-text-muted">
+<span class="text-text-primary font-semibold">Staff AI Architect</span> · FinTech Core
+        </div>
+</div>
+<div class="p-space-md rounded-lg bg-surface-secondary flex flex-col justify-between shadow-sm">
+<p class="font-body-sm text-body-sm text-text-secondary italic">
+          "Sub-15ms tool dispatch using Groq hardware means our users don't feel like they are waiting for an AI to formulate thoughts. It's fluid and deterministic."
+        </p>
+<div class="mt-space-md flex items-center gap-space-xs font-label-mono text-label-mono text-text-muted">
+<span class="text-text-primary font-semibold">Principal Engineer</span> · Autonomous Logistics
+        </div>
+</div>
+<div class="p-space-md rounded-lg bg-surface-secondary flex flex-col justify-between shadow-sm">
+<p class="font-body-sm text-body-sm text-text-secondary italic">
+          "The clean TypeScript tool registry lets us onboard legacy internal APIs without writing fragile custom agent glue code every single sprint."
+        </p>
+<div class="mt-space-md flex items-center gap-space-xs font-label-mono text-label-mono text-text-muted">
+<span class="text-text-primary font-semibold">Head of Platform</span> · DataEngine Inc
+        </div>
+</div>
+</div>
+</section>
+<!-- Section 9: Cinematic Final CTA Section -->
+<section class="relative py-space-xl px-gutter-desktop my-space-lg">
+<div class="max-w-5xl mx-auto rounded-xl p-space-xl bg-surface-secondary shadow-2xl relative overflow-hidden flex flex-col items-center text-center gap-space-md">
+<!-- Subtle Ambient Glow Scrim -->
+<div class="absolute inset-0 bg-[radial-gradient(ellipse_60%_60%_at_50%_0%,rgba(34,211,238,0.15),transparent)] pointer-events-none"></div>
+<div class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-elevated text-primary font-label-eyebrow text-label-eyebrow tracking-widest uppercase">
+<span class="w-1.5 h-1.5 rounded-full bg-accent-green"></span> Ready For Deployment
+      </div>
+<h2 class="font-headline-xl text-headline-xl text-text-primary tracking-tight max-w-2xl">
+        Give your AI the ability to act.
+      </h2>
+<p class="font-body-lg text-body-lg text-text-secondary max-w-xl">
+        Join hundreds of autonomous systems running on the AgentLab deterministic capability runtime. Launch a live session in under 30 seconds.
+      </p>
+<div class="flex flex-wrap items-center justify-center gap-space-md pt-space-xs relative z-10">
+<button class="inline-flex items-center gap-space-xs px-space-lg py-space-sm rounded-lg bg-text-primary text-canvas-base font-headline-sm text-headline-sm font-medium hover:bg-white transition-all shadow-[0_0_24px_rgba(245,247,250,0.2)]" type="button">
+<span>Launch AgentLab</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+<button class="inline-flex items-center gap-space-xs px-space-lg py-space-sm rounded-lg bg-surface-elevated text-text-primary font-headline-sm text-headline-sm hover:bg-surface-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px] text-text-muted">description</span>
+<span>Read Documentation</span>
+</button>
+</div>
+<div class="pt-space-md flex flex-wrap items-center justify-center gap-space-lg font-label-mono text-label-mono text-text-muted">
+<span>No credit card required</span>
+<span>•</span>
+<span>Open Source Core</span>
+<span>•</span>
+<span>Apache 2.0 Licensed</span>
+</div>
+</div>
+</section>
+</div>
+<!-- Client-side Interactive Capability Rotator Script -->
+<script>
+  (function() {
+    const capabilities = ["SEARCH", "RESEARCH", "CALCULATE", "ANALYZE", "ACT"];
+    let currentIndex = 0;
+    const rotatorElement = document.getElementById("capability-rotator");
+
+    if (rotatorElement) {
+      setInterval(() => {
+        currentIndex = (currentIndex + 1) % capabilities.length;
+        rotatorElement.style.opacity = '0';
+        rotatorElement.style.transform = 'translateY(4px)';
+        
+        setTimeout(() => {
+          rotatorElement.textContent = capabilities[currentIndex];
+          rotatorElement.style.opacity = '1';
+          rotatorElement.style.transform = 'translateY(0)';
+        }, 150);
+      }, 2200);
+    }
+  })();
+</script></main><footer class="w-full border-t border-border-subtle bg-surface-primary py-space-lg px-gutter-desktop"><div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-space-md font-body-sm text-body-sm text-text-muted"><div class="flex items-center gap-space-sm"><img alt="AgentLab Symbol Logo" class="h-5 w-auto object-contain opacity-70" src="https://lh3.googleusercontent.com/aida/AEtjO1UtSUaHPLuSI8zGTaoYlVpUUWrWGTtQm-KK5PlhDPHwldzKd1RXwUfutnBNbqs9FMPcRq_QM-LkwoiInv5p_dS8B8pi9woDR23cHmk4V0Z5Wb2VRwo6KtuKEqF0JjoeIYdzBEmPpveD-_rHBKVRnvXyq7a9aysDQ8BL2yMbUIsF6ZKcOPJC20u4TWEXUY_f9A4Oxo9STQmM5oVcnKjR4Q-blwSU60IacHm1gXh7yil5E8RN2yJMTjS2qg"/><span class="font-label-mono text-label-mono text-text-secondary">AgentLab Runtime v2.4.1</span><span>© 2025 Computational Autonomy Labs.</span></div><div class="flex items-center gap-space-lg font-label-mono text-label-mono"><a class="hover:text-text-primary transition-colors" data-path="api-documentation" href="#">Protocol Specs</a><a class="hover:text-text-primary transition-colors" data-path="telemetry-audit" href="#">Telemetry Hub</a><span class="text-accent-green">Cluster: US-East-1 (Groq Direct)</span></div></div></footer></body></html>
